@@ -1,0 +1,14 @@
+extends: spelling
+message: "Did you really mean '%s'?"
+level: error
+# This disables the built-in filters. If you omit this key or set it to false,
+# custom filters (see below) are added on top of the built-in ones.
+#
+# By default, Vale includes filters for acronyms, abbreviations, and numbers.
+custom: false,
+# A "filter" is a regular expression specifying words to ignore during spell
+# checking.
+# Vale will search for these files under $StylesPath -- so, vocab.txt is assumed
+# to be $StylesPath/vocab.txt.
+ignore:
+  - docs-vale/vocab.txt
